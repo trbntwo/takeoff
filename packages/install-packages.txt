@@ -1,0 +1,10 @@
+openssl
+wireguard-tools
+libratbag-ratbagd
+gamemode
+git
+corectrl
+gnome-tweaks
+syncthing
+gnome-shell-extension-gsconnect
+nautilus-gsconnect

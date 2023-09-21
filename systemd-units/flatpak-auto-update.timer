@@ -1,0 +1,12 @@
+[Unit]
+Description=calls flatpak-update.service 2.30 minutes after boot and every 3 hours
+Wants=network-online.target
+
+[Timer]
+OnStartupSec=2min 30sec
+OnUnitActiveSec=3h
+RandomizedDelaySec=10
+Unit=flatpak-auto-update.service
+
+[Install]
+WantedBy=multi-user.target

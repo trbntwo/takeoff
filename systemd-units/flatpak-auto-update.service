@@ -1,0 +1,9 @@
+[Unit]
+Description=updates installed flatpaks
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/flatpak update -y --noninteractive
+
+[Install]
+WantedBy=multi-user.target

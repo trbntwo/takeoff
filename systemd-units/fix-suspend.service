@@ -1,0 +1,9 @@
+[Unit]
+Description=disables GPP0 in /proc/acpi/wakeup to prohibit waking up immediately after suspend
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash -c "echo GPP0 >> /proc/acpi/wakeup"
+
+[Install]
+WantedBy=multi-user.target
