@@ -101,6 +101,6 @@ for OPTION in $@; do
             clean
             ;;
         -* | --*)
-            echo "$OPTION | isn't a valid option"
+            echo "$OPTION isn't a valid option"
     esac
 done
