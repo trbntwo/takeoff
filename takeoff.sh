@@ -100,7 +100,7 @@ for OPTION in $@; do
             source ./scripts/clean.sh
             clean
             ;;
-        -* | --*
+        -* | --*)
             echo "$OPTION | isn't a valid option"
     esac
 done
