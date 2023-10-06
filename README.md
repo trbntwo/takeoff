@@ -16,7 +16,7 @@ git clone https://github.com/trbntwo/takeoff.git
 cd fss/
 ```
 ```
-chmod ug+x takeoff.sh
+chmod u+x takeoff.sh
 ```
 ```
 ./takeoff.sh <options>
