@@ -19,15 +19,15 @@ cd fss/
 chmod u+x takeoff.sh
 ```
 ```
-./takeoff.sh <options>
+sudo ./takeoff.sh <options>
 ```
 
 The short options CAN'T be chained together, all options have to be on their own
 ```
-./takeoff.sh -oa         # won't work
+sudo ./takeoff.sh -oa         # won't work
 ```
 ```
-./takeoff.sh -o -a       # will work
+sudo ./takeoff.sh -o -a       # will work
 ```
 
 ## prerequisites
