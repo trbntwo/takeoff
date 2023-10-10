@@ -5,7 +5,11 @@ purge-fedora-flatpak-remote(){
 }
 
 flathub(){
-    flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    if [[ -n "$SUDO_USER" ]]; then
+	    sudo runuser -u $SUDO_USER -- flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    else
+	    sudo runuser -u $USER -- flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    fi
 }
 
 flatpak-auto-update(){
