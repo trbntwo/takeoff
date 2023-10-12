@@ -13,7 +13,7 @@ Under Silverblue only the options of the script can be used which do not install
 git clone https://github.com/trbntwo/takeoff.git
 ```
 ```
-cd fss/
+cd takeoff/
 ```
 ```
 chmod u+x takeoff.sh
